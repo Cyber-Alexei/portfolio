@@ -7,7 +7,7 @@ export const Spotlight = (): JSX.Element => {
       </h2>
       <div className="flex flex-wrap justify-center w-full pt-20 pb-10 gap-10 text-2xl font-medium">
         <div className="flex flex-col items-center justify-center w-[48%] min-w-[300px]">
-          <p className="py-2">Haz clic!</p>
+          <p className="py-2 text-xl">Haz clic para ver!</p>
           <div
             onClick={() =>
               (window.location.href =
@@ -34,7 +34,7 @@ export const Spotlight = (): JSX.Element => {
       </div>
       <div className="flex flex-wrap justify-center w-full pt-10 pb-10 gap-10 text-2xl font-medium">
         <div className="flex flex-col items-center justify-center w-[48%] min-w-[300px]">
-          <p className="py-2">Haz clic!</p>
+          <p className="py-2 text-xl">Haz clic para ver!</p>
           <div
             onClick={() =>
               (window.location.href =
@@ -57,7 +57,7 @@ export const Spotlight = (): JSX.Element => {
       </div>
       <div className="flex flex-wrap justify-center w-full pt-20 pb-10 gap-10 text-2xl font-medium">
         <div className="flex flex-col items-center justify-center w-[48%] min-w-[300px]">
-          <p className="py-2">Haz clic!</p>
+          <p className="py-2 text-xl">Haz clic para ver!</p>
           <div
             onClick={() =>
               (window.location.href =
