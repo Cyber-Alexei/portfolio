@@ -71,19 +71,20 @@ export const Spotlight = (): JSX.Element => {
           </div>
         </div>
         <div className="w-[48%] min-w-[300px] text-lg border-l border-l-white px-4">
-          Invitación a una boda, recorrido de tres fases. <br></br>
-          <br></br> 1 - El invitado es llevado a una página dinámicamente, con
-          el id de un usuario de la base de datos como parámetro de URL, esta
-          pagina muestra al usuario personalizado toda la informacion sobre el
-          evento. Hay un formulario que solicita al usuario su asistencia y la
-          asistencia de su pareja, luego se preguntan todas sus alergias y las
-          alergias de su pareja también (si es el caso). <br></br>
+          Invitación de boda, proceso en tres fases. <br></br>
+          <br></br> 1 - El usuario es llevado a una página dinámica, con el ID
+          de un invitado (alojado en la base de datos) como parámetro de URL.
+          Esta página mostrará, entonces, de forma personalizada, información
+          sobre el evento. Hay un formulario que solicita al usuario su
+          asistencia y la de alguna pareja. Luego, se preguntan todas sus
+          alergias y las alergias de su acompañante también (si es el caso).
+          <br></br>
           <br></br> 2 - Cuando se envía el formulario, el usuario es redirigido
           a una mini tienda electrónica con un catálogo de regalos para la boda
-          (mesa de regalos) donde el invitado podrá comprar un regalo para la
+          (mesa de regalos), donde el invitado podrá comprar un regalo para la
           pareja. <br></br>
           <br></br> 3 - Por último, el usuario es redirigido a un pequeño
-          formulario con diferentes tipos de preguntas y entradas, una vez que
+          formulario con diferentes tipos de preguntas y entradas. Una vez que
           se envía el formulario, el usuario recibe una tarjeta con los
           resultados correctos e incorrectos.
         </div>
