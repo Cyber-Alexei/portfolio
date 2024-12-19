@@ -31,7 +31,7 @@ export const Banner: React.FC = (): JSX.Element => {
       </h1>
       <p
         ref={portFolio}
-        className="transition-all duration-[3000ms] text-lg font-semibold tracking-[30px] sm:text-2xl sm:tracking-[60px] md:text-4xl md:tracking-[80px] lg:tracking-[100px]"
+        className="animate-pulse transition-all duration-[3000ms] text-lg font-semibold tracking-[30px] sm:text-2xl sm:tracking-[60px] md:text-4xl md:tracking-[80px] lg:tracking-[100px]"
       >
         PORTFOLIO
       </p>

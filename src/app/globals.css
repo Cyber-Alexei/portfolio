@@ -42,7 +42,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-200px * 10 - 0rem * 20));
+        transform: translateX(calc(-200px * 11 - 0rem * 22));
     }
 }
 
