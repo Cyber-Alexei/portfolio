@@ -17,7 +17,7 @@ export const Banner: React.FC = (): JSX.Element => {
       .replace("tracking-[30px]", "tracking-[20px]")
       .replace("sm:tracking-[60px]", "sm:tracking-[40px]")
       .replace("md:tracking-[80px]", "md:tracking-[60px]")
-      .replace("lg:tracking-[90px]", "lg:tracking-[80px]");
+      .replace("lg:tracking-[100px]", "lg:tracking-[80px]");
   }, []);
 
   // JSX
@@ -31,7 +31,7 @@ export const Banner: React.FC = (): JSX.Element => {
       </h1>
       <p
         ref={portFolio}
-        className="text-lg font-semibold tracking-[30px] sm:text-2xl sm:tracking-[60px] md:text-4xl md:tracking-[80px] lg:tracking-[90px]"
+        className="text-lg text-center font-semibold tracking-[30px] sm:text-2xl sm:tracking-[60px] md:text-4xl md:tracking-[80px] lg:tracking-[100px]"
       >
         PORTFOLIO
       </p>
