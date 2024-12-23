@@ -18,6 +18,7 @@ export const Certifications = () => {
           c.map((item: { name: string; url: string }, i: number) => {
             return (
               <div
+                onClick={() => router.push(item.url)}
                 key={i}
                 onMouseEnter={() => {
                   const iconsCollection: HTMLCollectionOf<Element> =
@@ -52,10 +53,7 @@ export const Certifications = () => {
                     color: "#c6951b",
                   }}
                 />
-                <p
-                  className="text-center w-full font-['times'] text-lg font-semibold"
-                  onClick={() => router.push(item.url)}
-                >
+                <p className="text-center w-full font-['times'] text-lg font-semibold">
                   {item.name}
                 </p>
               </div>
