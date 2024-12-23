@@ -43,6 +43,7 @@ export const Projects = () => {
               (item: { name: string; url: string }, i: number) => (
                 <div
                   key={i}
+                  onClick={() => (window.location.href = `${item.url}`)}
                   className="bg-[#303030] w-60 h-32 rounded-md flex items-center justify-center hover:animate-pulse cursor-pointer"
                 >
                   <p className="text-xl custom-text-shadow">{item.name}</p>
