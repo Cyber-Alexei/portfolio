@@ -38,10 +38,10 @@ export const Technologies = (): JSX.Element => {
         STACK
       </h2>
 
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden pb-10 pt-5">
         <div
           id="carousel"
-          className="scrolling-animation flex whitespace-nowrap pb-10 pt-5"
+          className="scrolling-animation flex whitespace-nowrap"
         >
           {technologies.map((tech: string, index: number) => {
             return (

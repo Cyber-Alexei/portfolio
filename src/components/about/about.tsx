@@ -4,7 +4,7 @@ export const About: React.FC = (): JSX.Element => {
       <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold">
         ABOUT ME
       </h2>
-      <p className="text-lg font-medium py-10">
+      <p className="text-lg font-medium pt-20 pb-10">
         25 años. <br></br>
         <br></br>
         Mi sueño es llegar a una gran empresa como SpaceX. <br></br>
