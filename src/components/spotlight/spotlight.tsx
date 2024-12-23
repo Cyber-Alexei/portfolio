@@ -63,7 +63,7 @@ export const Spotlight = (): JSX.Element => {
               (window.location.href =
                 "https://youtu.be/CsxyHiOVZIQ?si=D50G2gx-0YvzYvGg")
             }
-            className="cursor-pointer bg-blue-600 hover:scale-110 transition-transform duration-100 flex items-center justify-center w-[200px] h-[100px] rounded-sm"
+            className="cursor-pointer bg-blue-500 hover:scale-110 transition-transform duration-100 flex items-center justify-center w-[200px] h-[100px] rounded-sm"
           >
             <p className="text-center text-white font-medium">Evento</p>
           </div>

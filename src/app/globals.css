@@ -93,13 +93,13 @@ body {
 /*Class for front div*/
 .front {
     transform: perspective(600px) rotateY(0deg);
-    background-color: #80661b;
+    background-color: #c2993b;
 }
 
 /*Class for back div*/
 .back {
     transform: perspective(600px) rotateY(180deg);
-    background-color: #123e6b;
+    background-color: #408de5;
 }
 
 /*When hover the front will...*/
