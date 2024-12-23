@@ -20,23 +20,23 @@ export const Certifications = () => {
               <div
                 key={i}
                 onMouseEnter={() => {
-                  const iconsCollection: any = document.getElementsByClassName(
-                    `icon${i}`,
-                  );
+                  const iconsCollection: HTMLCollectionOf<Element> =
+                    document.getElementsByClassName(`icon${i}`);
                   for (const item of iconsCollection) {
-                    item.style.fontSize = "60px";
-                    item.style.top = "-15px";
-                    item.style.left = "-10px";
+                    const itemElement = item as HTMLElement;
+                    itemElement.style.fontSize = "60px";
+                    itemElement.style.top = "-15px";
+                    itemElement.style.left = "-10px";
                   }
                 }}
                 onMouseLeave={() => {
-                  const iconsCollection: any = document.getElementsByClassName(
-                    `icon${i}`,
-                  );
+                  const iconsCollection: HTMLCollectionOf<Element> =
+                    document.getElementsByClassName(`icon${i}`);
                   for (const item of iconsCollection) {
-                    item.style.fontSize = "40px";
-                    item.style.top = "0px";
-                    item.style.left = "-5px";
+                    const itemElement = item as HTMLElement;
+                    itemElement.style.fontSize = "40px";
+                    itemElement.style.top = "0px";
+                    itemElement.style.left = "-5px";
                   }
                 }}
                 className="relative border border-gray-400 shadow-2xl shadow-gray-400 hover:scale-110 duration-100 transition-transform cursor-pointer bg-white px-6 text-black flex items-center rounded-sm w-60 h-32"
