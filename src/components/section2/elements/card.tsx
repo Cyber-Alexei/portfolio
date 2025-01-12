@@ -3,7 +3,15 @@ import { projectCardData } from "../types";
 const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
   return (
     <div
-      onClick={() => (window.location.href = data.path)}
+      /*onClick={() => (window.location.href = data.path)}*/
+      onClick={() => {
+        if (data.name === "Wasppet.dev") {
+          window.location.href = "https://alexei-torres-wasppet.netlify.app";
+        }
+        if (data.name === "Servo") {
+          window.location.href = "https://alexei-torres-servo.netlify.app";
+        }
+      }}
       key={data.index}
       className="cursor-pointer hover:shadow-lg transform hover:scale-95 transition-all duration-300 h-[80%] w-[80%] sm:h-[70%] sm:w-[70%] md:h-[65%] md:w-[65%] flex flex-col items-center justify-between bg-white py-4"
     >
