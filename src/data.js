@@ -7,13 +7,13 @@ export const certifications = [
   },
   {
     id: 1,
-    name: "Front End Development Libraries on FreeCodeCamp",
+    name: "Front End Development Libraries",
     institution: "FreeCodeCamp",
     url: "https://www.freecodecamp.org/certification/Alexei_Torres/front-end-development-libraries",
   },
   {
     id: 2,
-    name: "Modern JavaScript on Udemy",
+    name: "Modern JavaScript",
     institution: "Udemy",
     url: "https://www.udemy.com/certificate/UC-d40ae4bb-bac0-44c5-8a87-77f3c1c93c44/",
   },
