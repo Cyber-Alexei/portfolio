@@ -39,7 +39,7 @@ export default function Section2() {
         {/*MAIN DIV*/}
         <div className="w-full h-full flex items-center">
           {/*IMAGE*/}
-          <div className="z-10 sm:w-[700px] sm:h-[700px] md:w-[90%] md:h-[90%] absolute bg-[url(/images/branch1-movil.png)] md:bg-[url(/images/branch1.png)] w-[800px] h-[800px] bg-contain bg-no-repeat bg-left"></div>
+          <div className="z-10 sm:w-[700px] sm:h-[700px] md:w-[90%] md:h-[90%] absolute bg-[url(/images/branch1.png)] w-[800px] h-[800px] bg-contain bg-no-repeat bg-left"></div>
           {/*CONTENT DIV*/}
           <div className="flex items-center justify-center w-full h-full z-10">
             <div className="relative sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] bg-[rgba(240,240,240,0.5)] flex flex-col gap-6 items-center justify-center border border-solid border-[#8b9339]">
