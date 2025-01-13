@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Section1() {
   return (
     <div className="relative h-[100vh] w-[100vw]">
@@ -66,7 +68,18 @@ export default function Section1() {
               </p>
             </div>
           </div>
-          <div className="lg:w-[600px] lg:h-[600px] w-[100%] h-[100%] bg-[url(/images/tree-movil.png)] md:bg-[url(/images/tree.png)] bg-contain bg-center bg-no-repeat"></div>
+          <div className="relative lg:w-[600px] lg:h-[600px] w-[100%] h-[100%]">
+            <Image
+              className="absolute"
+              alt="tree"
+              src="/images/tree.png"
+              fill={true}
+              quality={100}
+              style={{ objectFit: "contain", objectPosition: "center" }}
+              priority={true}
+              //unoptimized={true}
+            />
+          </div>
         </div>
       </div>
     </div>
