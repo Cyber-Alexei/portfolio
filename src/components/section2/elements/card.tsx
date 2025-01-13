@@ -27,7 +27,7 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
             alt="project logo"
             src={`${data.logoPath}`}
             fill={true}
-            quality={85}
+            quality={75}
             style={{ objectFit: "contain", objectPosition: "center" }}
             priority={true}
             //unoptimized={true}
