@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projectCardData } from "../types";
 
 const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
@@ -18,9 +19,20 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
       {/*LOGO*/}
       <div className="flex items-center justify-center w-full h-[80%]">
         <div
-          style={{ backgroundImage: `url(${data.logoPath})` }}
-          className="h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
-        ></div>
+          //style={{ backgroundImage: `url(${data.logoPath})` }}
+          className="relative h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
+        >
+          <Image
+            className="absolute"
+            alt="project logo"
+            src={`${data.logoPath}`}
+            fill={true}
+            quality={100}
+            style={{ objectFit: "contain", objectPosition: "center" }}
+            priority={true}
+            //unoptimized={true}
+          />
+        </div>
       </div>
       {/*TITLE*/}
       <div className="text-[10dvw] sm:text-[7dvw] md:text-[6dvw] lg:text-[70px] flex items-center justify-center w-full h-[15%]">
