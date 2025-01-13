@@ -6,52 +6,52 @@ export default function Section1() {
       <div className="w-full h-full max-w-[1450px]">
         {/*NAME CAROUSEL*/}
         <div className="nameCarouselAnimation flex leading-none text-[300px] whitespace-nowrap text-gray-200">
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
-          <p className="w-[820px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[820px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             Alexei
           </p>
         </div>

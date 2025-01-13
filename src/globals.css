@@ -69,7 +69,7 @@ body {
 }
 
 .nameCarouselAnimation {
-    animation: nameCarousel 80s linear infinite;
+    animation: nameCarousel 40s linear infinite;
 }
 
 @keyframes nameCarousel {
@@ -77,12 +77,12 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-820px * 8));
+        transform: translateX(calc(-820px * 4));
     }
 }
 
 .aboutCarouselAnimation {
-    animation: aboutCarousel 80s linear infinite;
+    animation: aboutCarousel 40s linear infinite;
 }
 
 @keyframes aboutCarousel {
@@ -90,6 +90,6 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-1000px * 8));
+        transform: translateX(calc(-1000px * 4));
     }
 }

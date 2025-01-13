@@ -4,52 +4,52 @@ export default function Section4() {
       <div className="flex flex-col items-center justify-center w-full h-full max-w-[1450px]">
         {/*ABOUT CAROUSEL*/}
         <div className="aboutCarouselAnimation flex leading-none text-[300px] text-white opacity-20 whitespace-nowrap">
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
-          <p className="w-[1000px] flex-shrink-0 items-center justify-center text-center">
+          <p className="w-[1000px] flex-shrink-0 flex-grow-0 items-center justify-center text-center">
             About
           </p>
         </div>
