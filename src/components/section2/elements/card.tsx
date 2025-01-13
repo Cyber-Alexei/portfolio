@@ -2,7 +2,10 @@ import Image from "next/image";
 import { projectCardData } from "../types";
 import { Suspense } from "react";
 
-const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
+const ProjectCard: React.FC<{ data: projectCardData; size: string | null }> = ({
+  data,
+  size,
+}) => {
   return (
     <div
       /*onClick={() => (window.location.href = data.path)}*/
@@ -23,18 +26,34 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
           //style={{ backgroundImage: `url(${data.logoPath})` }}
           className="relative h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
         >
-          <Suspense>
-            <Image
-              className="absolute"
-              alt="project logo"
-              src={`${data.logoPath}`}
-              fill={true}
-              quality={40}
-              style={{ objectFit: "contain", objectPosition: "center" }}
-              priority={true}
-              //unoptimized={true}
-            />
-          </Suspense>
+          {size === "small" && (
+            <Suspense>
+              <Image
+                className="absolute"
+                alt="project logo"
+                src={`${data.logoPath}`}
+                fill={true}
+                quality={40}
+                style={{ objectFit: "contain", objectPosition: "center" }}
+                priority={true}
+                //unoptimized={true}
+              />
+            </Suspense>
+          )}
+          {size === "wide" && (
+            <Suspense>
+              <Image
+                className="absolute"
+                alt="project logo"
+                src={`${data.logoPath}`}
+                fill={true}
+                quality={80}
+                style={{ objectFit: "contain", objectPosition: "center" }}
+                priority={true}
+                //unoptimized={true}
+              />
+            </Suspense>
+          )}
         </div>
       </div>
       {/*TITLE*/}
