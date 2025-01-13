@@ -74,10 +74,10 @@ export default function Section1() {
               alt="tree"
               src="/images/tree.png"
               fill={true}
-              quality={100}
+              quality={80}
               style={{ objectFit: "contain", objectPosition: "center" }}
               priority={true}
-              //unoptimized={true}
+              unoptimized={false}
             />
           </div>
         </div>
