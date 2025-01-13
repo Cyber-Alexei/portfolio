@@ -28,17 +28,15 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
               className="absolute"
               alt="project logo"
               src={`${data.logoPath}`}
-              width={300}
-              height={300}
+              fill={true}
               style={{ objectFit: "contain", objectPosition: "center" }}
               priority={true}
-              unoptimized={false}
             />
           </Suspense>
         </div>
       </div>
       {/*TITLE*/}
-      <div className="text-[10dvw] sm:text-[7dvw] md:text-[6dvw] lg:text-[70px] flex items-center justify-center w-full h-[15%]">
+      <div className="text-[10dvw] sm:text-[7dvw] md:text-[6dvw] lg:text-[70px] flex items-center justify-center w-full h-[15%] pb-2">
         <p style={data.styles.titleCss}>{data.styles.title}</p>
         {data.styles.title2 ? (
           <p style={data.styles.title2Css}>{data.styles.title2}</p>
