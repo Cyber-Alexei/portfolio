@@ -1,9 +1,10 @@
 "use client";
+import { lazy, Suspense } from "react";
 import { spotlightProjects as projects } from "@/data";
-import ProjectCard from "./elements/card";
 import { useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+const ProjectCard = lazy(() => import("./elements/card"));
 
 export default function Section2() {
   // State
@@ -44,7 +45,9 @@ export default function Section2() {
           <div className="flex items-center justify-center w-full h-full z-10">
             <div className="relative sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] bg-[rgba(240,240,240,0.5)] flex flex-col gap-6 items-center justify-center border border-solid border-[#8b9339]">
               {/*CARDS*/}
-              <ProjectCard data={projects[projectCardId]} />
+              <Suspense>
+                <ProjectCard data={projects[projectCardId]} />
+              </Suspense>
               <div className="flex gap-20">
                 <div
                   onClick={() => goLeft()}
