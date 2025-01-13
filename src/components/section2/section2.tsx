@@ -1,6 +1,6 @@
 "use client";
 import { spotlightProjects as projects } from "@/data";
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, lazy, Suspense } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const ProjectCard = lazy(() => import("./elements/card"));
@@ -8,7 +8,6 @@ const ProjectCard = lazy(() => import("./elements/card"));
 export default function Section2() {
   // State
   const [projectCardId, setProjectCardId] = useState<number>(0);
-  const [smallOrWide, setSmallOrWide] = useState<string | null>(null);
 
   // Functions
   const goRight = () => {
@@ -26,15 +25,6 @@ export default function Section2() {
     }
     setProjectCardId((prevState) => prevState - 1);
   };
-
-  // Effect
-  useEffect(() => {
-    if (window.innerWidth < 600) {
-      setSmallOrWide("small");
-    } else {
-      setSmallOrWide("wide");
-    }
-  }, []);
 
   // JSX
   return (
@@ -55,10 +45,7 @@ export default function Section2() {
             <div className="relative sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] bg-[rgba(240,240,240,0.5)] flex flex-col gap-6 items-center justify-center border border-solid border-[#8b9339]">
               {/*CARDS*/}
               <Suspense>
-                <ProjectCard
-                  data={projects[projectCardId]}
-                  size={smallOrWide}
-                />
+                <ProjectCard data={projects[projectCardId]} />
               </Suspense>
               <div className="flex gap-20">
                 <div
