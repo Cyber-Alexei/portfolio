@@ -66,7 +66,7 @@ export default function Section1() {
               </p>
             </div>
           </div>
-          <div className="lg:w-[600px] lg:h-[600px] w-[100%] h-[100%] bg-[url(/images/tree.png)] bg-contain bg-center bg-no-repeat"></div>
+          <div className="lg:w-[600px] lg:h-[600px] w-[100%] h-[100%] bg-[url(/images/tree-movil.png)] md:bg-[url(/images/tree.png)] bg-contain bg-center bg-no-repeat"></div>
         </div>
       </div>
     </div>
