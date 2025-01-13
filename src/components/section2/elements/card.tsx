@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projectCardData } from "../types";
+import { Suspense } from "react";
 
 const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
   return (
@@ -22,16 +23,18 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
           //style={{ backgroundImage: `url(${data.logoPath})` }}
           className="relative h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
         >
-          <Image
-            className="absolute"
-            alt="project logo"
-            src={`${data.logoPath}`}
-            fill={true}
-            quality={75}
-            style={{ objectFit: "contain", objectPosition: "center" }}
-            priority={true}
-            //unoptimized={true}
-          />
+          <Suspense>
+            <Image
+              className="absolute"
+              alt="project logo"
+              src={`${data.logoPath}`}
+              fill={true}
+              quality={40}
+              style={{ objectFit: "contain", objectPosition: "center" }}
+              priority={true}
+              //unoptimized={true}
+            />
+          </Suspense>
         </div>
       </div>
       {/*TITLE*/}
