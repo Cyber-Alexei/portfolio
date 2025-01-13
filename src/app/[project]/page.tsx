@@ -247,7 +247,6 @@ export default function ProjectPage() {
                           src={`/images/plants/${image[0]}`}
                           fill={true}
                           priority={true}
-                          //unoptimized={true}
                           style={{
                             objectFit: "contain",
                           }}
@@ -270,7 +269,6 @@ export default function ProjectPage() {
                             objectFit: "cover",
                           }}
                           priority={true}
-                          //unoptimized={true}
                         />
                       </div>
                       {item[1].length > 0 && (
