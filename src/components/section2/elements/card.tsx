@@ -21,14 +21,15 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
       <div className="flex items-center justify-center w-full h-[80%]">
         <div
           //style={{ backgroundImage: `url(${data.logoPath})` }}
-          className="relative h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
+          className="relative flex items-center justify-center h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
         >
           <Suspense>
             <Image
               className="absolute"
               alt="project logo"
               src={`${data.logoPath}`}
-              fill={true}
+              width={300}
+              height={300}
               quality={80}
               style={{ objectFit: "contain", objectPosition: "center" }}
               priority={true}
