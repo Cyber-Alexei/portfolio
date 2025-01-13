@@ -246,7 +246,6 @@ export default function ProjectPage() {
                           alt="project image from gallery"
                           src={`/images/plants/${image[0]}`}
                           fill={true}
-                          quality={100}
                           priority={true}
                           //unoptimized={true}
                           style={{
@@ -267,7 +266,6 @@ export default function ProjectPage() {
                               : `/images/${project}/movil/${i + 1}.png`
                           }
                           fill={true}
-                          quality={100}
                           style={{
                             objectFit: "cover",
                           }}

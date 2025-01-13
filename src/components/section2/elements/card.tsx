@@ -30,7 +30,6 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
               src={`${data.logoPath}`}
               width={300}
               height={300}
-              quality={80}
               style={{ objectFit: "contain", objectPosition: "center" }}
               priority={true}
               unoptimized={false}

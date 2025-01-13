@@ -10,7 +10,6 @@ export default function NotFound() {
           src="/images/404image.png"
           fill={true}
           priority={true}
-          quality={100}
           style={{
             position: "absolute",
             objectFit: "contain",
