@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Section1() {
   return (
@@ -69,16 +70,18 @@ export default function Section1() {
             </div>
           </div>
           <div className="relative lg:w-[600px] lg:h-[600px] w-[100%] h-[100%]">
-            <Image
-              className="absolute"
-              alt="tree"
-              src="/images/tree.png"
-              fill={true}
-              quality={80}
-              style={{ objectFit: "contain", objectPosition: "center" }}
-              priority={true}
-              unoptimized={false}
-            />
+            <Suspense>
+              <Image
+                className="absolute"
+                alt="tree"
+                src="/images/tree.png"
+                fill={true}
+                quality={80}
+                style={{ objectFit: "contain", objectPosition: "center" }}
+                priority={true}
+                unoptimized={false}
+              />
+            </Suspense>
           </div>
         </div>
       </div>
