@@ -45,16 +45,16 @@ export default function Section3() {
             <div className="relative sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] bg-[rgba(240,240,240,0.5)] flex flex-col gap-6 items-center justify-center border border-solid border-[#8b9339]">
               {/*CARDS*/}
               <Certification data={c[certificationId]} />
-              <div className="flex gap-20">
+              <div className="absolute bottom-0 py-10 flex gap-20">
                 <div
                   onClick={() => goLeft()}
-                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md"
+                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
                 >
                   <ArrowBackIosNewIcon />
                 </div>
                 <div
                   onClick={() => goRight()}
-                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md"
+                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
                 >
                   <ArrowForwardIosIcon />
                 </div>

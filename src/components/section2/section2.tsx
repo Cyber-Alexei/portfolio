@@ -1,7 +1,6 @@
 "use client";
-import { ImageComponent } from "./elements/image";
 import { spotlightProjects as projects } from "@/data";
-import { useState, useEffect, lazy, Suspense, useCallback } from "react";
+import { useState, lazy } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const ProjectCard = lazy(() => import("./elements/card"));
@@ -9,9 +8,6 @@ const ProjectCard = lazy(() => import("./elements/card"));
 export default function Section2() {
   // State
   const [projectCardId, setProjectCardId] = useState<number>(0);
-  const [imagesCache, setImagesCache] = useState<{
-    [key: string]: React.ReactNode;
-  } | null>(null);
 
   // Functions
   const goRight = () => {
@@ -30,62 +26,50 @@ export default function Section2() {
     setProjectCardId((prevState) => prevState - 1);
   };
 
-  const preloadImageList = useCallback((imageUrls: string[]) => {
-    const preloadedImgs: { [key: string]: React.ReactNode } = {};
-    imageUrls.forEach((src) => {
-      const image = ImageComponent(src);
-      preloadedImgs[src] = image;
-    });
-    setImagesCache(preloadedImgs);
-  }, []);
-
-  // Effect
-  useEffect(() => {
-    preloadImageList([
-      "/images/projectCards/servo.png",
-      "/images/projectCards/wasppet.png",
-    ]);
-  }, [preloadImageList]);
-
   // JSX
   return (
-    <div className="relative h-[150vh] w-[100vw] bg-gray-100">
-      <div className="w-full h-full max-w-[1450px">
+    <div className="relative flex items-center h-[150vh] w-[100vw] bg-gray-100">
+      <div className="w-full h-full max-w-[1450px]">
         {/*TITLE*/}
-        <div className="absolute top-0 w-full">
+        <div className="w-full absolute top-0">
           <h2 className="text-center leading-none text-[22vw] w-full text-white">
             PROJECTS
           </h2>
         </div>
+        {/*IMAGE*/}
+        <div className="absolute z-10 sm:w-[700px] sm:h-[700px] md:w-[90%] md:h-[90%] bg-[url(/images/branch1.png)] w-[800px] h-[800px] bg-contain bg-no-repeat bg-left"></div>
         {/*MAIN DIV*/}
-        <div className="w-full h-full flex items-center">
-          {/*IMAGE*/}
-          <div className="z-10 sm:w-[700px] sm:h-[700px] md:w-[90%] md:h-[90%] absolute bg-[url(/images/branch1.png)] w-[800px] h-[800px] bg-contain bg-no-repeat bg-left"></div>
+        <div className="absolute z-20 top-0 h-full w-full flex items-center justify-center">
           {/*CONTENT DIV*/}
-          <div className="flex items-center justify-center w-full h-full z-10">
-            <div className="relative sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] bg-[rgba(240,240,240,0.5)] flex flex-col gap-6 items-center justify-center border border-solid border-[#8b9339]">
-              {/*CARDS*/}
-              {imagesCache !== null && (
-                <Suspense>
-                  <ProjectCard
-                    data={projects[projectCardId]}
-                    imagesCache={imagesCache}
-                  />
-                </Suspense>
-              )}
-              <div className="flex gap-20">
+          <div
+            style={{ translate: `${-100 * projectCardId}%` }}
+            className="absolute flex w-full h-full z-10"
+          >
+            {/*CARDS*/}
+            {projects &&
+              projects.map((p) => (
                 <div
-                  onClick={() => goLeft()}
-                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md"
+                  key={p.index}
+                  className="w-full h-full flex flex-shrink-0 flex-grow-0"
                 >
-                  <ArrowBackIosNewIcon />
+                  <ProjectCard data={p} />
                 </div>
-                <div
-                  onClick={() => goRight()}
-                  className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md"
-                >
-                  <ArrowForwardIosIcon />
-                </div>
+              ))}
+          </div>
+          {/*CONTAINER SIMULATION*/}
+          <div className="absolute bg-[rgba(240,240,240,0.5)] flex gap-6 items-center justify-center sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] border border-solid border-[#8b9339]">
+            <div className="absolute bottom-0 py-10 flex gap-20">
+              <div
+                onClick={() => goLeft()}
+                className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
+              >
+                <ArrowBackIosNewIcon />
+              </div>
+              <div
+                onClick={() => goRight()}
+                className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
+              >
+                <ArrowForwardIosIcon />
               </div>
             </div>
           </div>
@@ -94,3 +78,4 @@ export default function Section2() {
     </div>
   );
 }
+//
