@@ -1,8 +1,13 @@
-import Image from "next/image";
+"use client";
+//import Image from "next/image";
 import { projectCardData } from "../types";
-import { Suspense } from "react";
+//import { Suspense } from "react";
+import AdsClickIcon from "@mui/icons-material/AdsClick";
 
-const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
+const ProjectCard: React.FC<{
+  data: projectCardData;
+  imagesCache: { [key: string]: React.ReactNode };
+}> = ({ data, imagesCache }) => {
   return (
     <div
       /*onClick={() => (window.location.href = data.path)}*/
@@ -23,18 +28,14 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
           //style={{ backgroundImage: `url(${data.logoPath})` }}
           className="relative flex items-center justify-center h-full w-full bg-contain bg-center bg-no-repeat hover:scale-125 transform duration-300"
         >
-          <Suspense>
-            <Image
-              className="absolute"
-              alt="project logo"
-              src={`${data.logoPath}`}
-              fill={true}
-              style={{ objectFit: "contain", objectPosition: "center" }}
-              priority={true}
-            />
-          </Suspense>
+          {imagesCache[data.logoPath]}
         </div>
       </div>
+      {/*CLICK ICON*/}
+      <AdsClickIcon
+        className="text-[#8b9339] bottom-[100px] right-10 absolute animate-ping"
+        sx={{ fontSize: "20px" }}
+      />
       {/*TITLE*/}
       <div className="text-[10dvw] sm:text-[7dvw] md:text-[6dvw] lg:text-[70px] flex items-center justify-center w-full h-[15%] pb-2">
         <p style={data.styles.titleCss}>{data.styles.title}</p>
