@@ -78,7 +78,6 @@ export default function Section1() {
                 fill={true}
                 style={{ objectFit: "contain", objectPosition: "center" }}
                 priority={true}
-                unoptimized={false}
               />
             </Suspense>
           </div>

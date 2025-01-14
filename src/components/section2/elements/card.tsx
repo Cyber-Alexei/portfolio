@@ -27,7 +27,7 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
               alt="logo image"
               src={data.logoPath}
               fill={true}
-              priority={true}
+              priority={false}
             />
           </div>
           {/*CLICK ICON*/}
