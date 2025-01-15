@@ -32,7 +32,7 @@ export default function Section2() {
 
   // JSX
   return (
-    <div className="relative flex items-center h-[150vh] w-[100vw] bg-gray-100">
+    <div className="relative flex items-center h-[150vh] w-full bg-gray-100">
       <div className="w-full h-full max-w-[1450px]">
         {/*TITLE*/}
         <div className="w-full absolute top-0">

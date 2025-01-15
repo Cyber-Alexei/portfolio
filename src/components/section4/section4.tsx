@@ -1,6 +1,6 @@
 export default function Section4() {
   return (
-    <div className="relative flex justify-center min-h-[100vh] w-[100vw] bg-[#363F1F]">
+    <div className="relative flex justify-center min-h-[100vh] w-full bg-[#363F1F]">
       <div className="flex flex-col items-center justify-center w-full h-full max-w-[1450px]">
         {/*ABOUT CAROUSEL*/}
         <div className="aboutCarouselAnimation flex leading-none text-[300px] text-white opacity-20 whitespace-nowrap">

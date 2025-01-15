@@ -28,7 +28,7 @@ export default function Section3() {
 
   // JSX
   return (
-    <div className="relative h-[150vh] w-[100vw]">
+    <div className="relative h-[150vh] w-full">
       <div className="w-full h-full max-w-[1450px]">
         {/*TITLE*/}
         <div className="absolute top-0 w-full">

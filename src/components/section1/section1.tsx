@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 export default function Section1() {
   return (
-    <div className="relative h-[100vh] w-[100vw]">
+    <div className="relative h-[100vh] w-full">
       <div className="w-full h-full max-w-[1450px]">
         {/*NAME CAROUSEL*/}
         <div className="nameCarouselAnimation flex leading-none text-[300px] whitespace-nowrap text-gray-200">
