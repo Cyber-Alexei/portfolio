@@ -1,5 +1,7 @@
 "use client";
 import { certificationData } from "../types";
+import { Suspense, lazy } from "react";
+const AdsClickIcon = lazy(() => import("@mui/icons-material/AdsClick"));
 
 export const Certification: React.FC<{ data: certificationData }> = ({
   data,
@@ -19,6 +21,13 @@ export const Certification: React.FC<{ data: certificationData }> = ({
         <p>On</p>
         <p>{data.institution}</p>
       </div>
+      {/*CLICK ICON*/}
+      <Suspense>
+        <AdsClickIcon
+          className="text-[#8b9339] bottom-[100px] right-10 absolute animate-ping"
+          sx={{ fontSize: "20px" }}
+        />
+      </Suspense>
     </div>
   );
 };
