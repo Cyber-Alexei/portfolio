@@ -1,13 +1,13 @@
 "use client";
 import { spotlightProjects as projects } from "@/data";
 import { useState, lazy, Suspense } from "react";
+import ProjectCard from "./elements/card";
 const ArrowBackIosNewIcon = lazy(
   () => import("@mui/icons-material/ArrowBackIosNew"),
 );
 const ArrowForwardIosIcon = lazy(
   () => import("@mui/icons-material/ArrowForwardIos"),
 );
-const ProjectCard = lazy(() => import("./elements/card"));
 
 export default function Section2() {
   // State
@@ -49,18 +49,16 @@ export default function Section2() {
             style={{ translate: `${-100 * projectCardId}%` }}
             className="absolute flex w-full h-full z-10"
           >
-            <Suspense>
-              {/*CARDS*/}
-              {projects &&
-                projects.map((p) => (
-                  <div
-                    key={p.index}
-                    className="w-full h-full flex flex-shrink-0 flex-grow-0"
-                  >
-                    <ProjectCard data={p} />
-                  </div>
-                ))}
-            </Suspense>
+            {/*CARDS*/}
+            {projects &&
+              projects.map((p) => (
+                <div
+                  key={p.index}
+                  className="w-full h-full flex flex-shrink-0 flex-grow-0"
+                >
+                  <ProjectCard data={p} />
+                </div>
+              ))}
           </div>
           {/*CONTAINER SIMULATION*/}
           <div className="absolute bg-[rgba(240,240,240,0.5)] flex gap-6 items-center justify-center sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%] border border-solid border-[#8b9339]">
@@ -69,13 +67,17 @@ export default function Section2() {
                 onClick={() => goLeft()}
                 className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
               >
-                <ArrowBackIosNewIcon />
+                <Suspense>
+                  <ArrowBackIosNewIcon />
+                </Suspense>
               </div>
               <div
                 onClick={() => goRight()}
                 className="flex items-center p-1 justify-center z-20 cursor-pointer text-white bg-[#8b9339] rounded-md border border-solid border-[#363F1F]"
               >
-                <ArrowForwardIosIcon />
+                <Suspense>
+                  <ArrowForwardIosIcon />
+                </Suspense>
               </div>
             </div>
           </div>

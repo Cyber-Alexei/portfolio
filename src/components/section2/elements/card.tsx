@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { projectCardData } from "../types";
-import AdsClickIcon from "@mui/icons-material/AdsClick";
+import { Suspense, lazy } from "react";
+const AdsClickIcon = lazy(() => import("@mui/icons-material/AdsClick"));
 
 const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
   return (
@@ -27,14 +28,16 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
               alt="logo image"
               src={data.logoPath}
               fill={true}
-              priority={false}
+              priority={true}
             />
           </div>
           {/*CLICK ICON*/}
-          <AdsClickIcon
-            className="text-[#8b9339] bottom-[100px] right-10 absolute animate-ping"
-            sx={{ fontSize: "20px" }}
-          />
+          <Suspense>
+            <AdsClickIcon
+              className="text-[#8b9339] bottom-[100px] right-10 absolute animate-ping"
+              sx={{ fontSize: "20px" }}
+            />
+          </Suspense>
           {/*TITLE*/}
           <div className="text-[10dvw] sm:text-[7dvw] md:text-[6dvw] lg:text-[70px] flex items-center justify-center w-full h-[15%] pb-2">
             <p style={data.styles.titleCss}>{data.styles.title}</p>
