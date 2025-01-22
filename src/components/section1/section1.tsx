@@ -62,11 +62,13 @@ export default function Section1() {
             <div className="bg-[rgba(255,255,255,0.6)] p-4 rounded-sm">
               <h1 className="aboreto text-[30px]">Alexei Torres</h1>
               <h2 className="font-light text-xl">
-                Specialized Software Developer And Strategist
+                Desarrollador De Software Especializado
               </h2>
+
               <p className="font-light">
-                Responsive web application development
+                Aplicaciones web escalables y responsivas
               </p>
+              <p className="font-light text-lg py-4">{`Eres reclutador? negociemos.`}</p>
             </div>
           </div>
           <div className="relative lg:w-[600px] lg:h-[600px] w-[100%] h-[100%]">
