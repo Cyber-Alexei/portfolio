@@ -62,7 +62,7 @@ export default function Section1() {
             <div className="bg-[rgba(255,255,255,0.6)] p-4 rounded-sm">
               <h1 className="aboreto text-[30px]">Alexei Torres</h1>
               <h2 className="font-light text-xl">
-                Specialized Frontend Developer
+                Specialized Software Developer And Strategist
               </h2>
               <p className="font-light">
                 Responsive web application development
