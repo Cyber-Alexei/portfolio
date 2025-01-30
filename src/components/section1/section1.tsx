@@ -68,7 +68,6 @@ export default function Section1() {
               <p className="font-light">
                 Aplicaciones web escalables y responsivas
               </p>
-              <p className="font-light text-lg py-4">{`Eres reclutador? negociemos.`}</p>
             </div>
           </div>
           <div className="relative lg:w-[600px] lg:h-[600px] w-[100%] h-[100%]">
