@@ -61,10 +61,7 @@ export default function Section4() {
               <p>Tengo 25 años y comencé a mediados del 2022.</p>
               <p>
                 Mi especialización está orientada al frontend, sin embargo,
-                puedo trabajar en el backend. No soy freelancer y no me apetece
-                mucho la idea de mantener proyectos personales; los construyo
-                para demostrar habilidad o en cualquier caso dejarlos a la
-                comunidad.
+                trabajo el backend de igual manera, con Django y Python o Node.js y Express.js.
               </p>
               <p>
                 Lo que yo quiero es ser parte de un proyecto que tenga un
