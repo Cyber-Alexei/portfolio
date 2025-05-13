@@ -24,7 +24,7 @@ export const spotlightProjects = [
   {
     index: 0,
     name: "Wasppet.dev",
-    path: "/wasppet",
+    path: "https://alexei-torres-wasppet.netlify.app",
     logoPath: "/images/projectCards/wasppet.png",
     styles: {
       title: "W",
@@ -40,13 +40,26 @@ export const spotlightProjects = [
   {
     index: 1,
     name: "Servo",
-    path: "/servo",
+    path: "https://alexei-torres-servo.netlify.app",
     logoPath: "/images/projectCards/servo.png",
     styles: {
       title: "Servo",
       titleCss: {
-        fontWeight: "500",
+        fontWeight: "400",
         color: "#c74ef5",
+      },
+    },
+  },
+  {
+    index: 2,
+    name: "propertyAppraiser",
+    path: "https://alexei-torres-property-appraiser.netlify.app/",
+    logoPath: "/images/projectCards/property.png",
+    styles: {
+      title: "Appraiser",
+      titleCss: {
+        fontWeight: "400",
+        color: "#a52f2f",
       },
     },
   },

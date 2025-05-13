@@ -10,13 +10,7 @@ const ProjectCard: React.FC<{ data: projectCardData }> = ({ data }) => {
       <div className="flex items-center justify-center sm:w-[80%] md:w-[70%] lg:w-[770px] lg:h-[560px] w-[90%] h-[60%]">
         <div
           onClick={() => {
-            if (data.name === "Wasppet.dev") {
-              window.location.href =
-                "https://alexei-torres-wasppet.netlify.app";
-            }
-            if (data.name === "Servo") {
-              window.location.href = "https://alexei-torres-servo.netlify.app";
-            }
+            window.location.href = data.path;
           }}
           key={data.index}
           className="bg-white pb-4 cursor-pointer hover:shadow-lg transform hover:scale-95 transition-all duration-300 h-[50%] w-[80%] sm:h-[50%] sm:w-[70%] md:h-[50%] md:w-[65%] lg:h-[60%] lg:w-[65%] flex flex-col items-center justify-between"
